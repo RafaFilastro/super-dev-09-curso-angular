@@ -7,7 +7,7 @@ import { Navbar } from "./navbar/navbar";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BoasVindas, CidadeBlumenau, CidadeIndaial, RouterLink, Navbar],
+  imports: [RouterOutlet, BoasVindas, CidadeBlumenau, CidadeIndaial, RouterLink, Navbar,],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

@@ -1,60 +1,47 @@
-# EscolaNg
+EscolaNg
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
+Este projeto foi gerado utilizando o Angular CLI versão 21.2.13.
 
-## Development server
+Servidor de desenvolvimento
 
-To start a local development server, run:
+Para iniciar um servidor de desenvolvimento local, execute:
 
-```bash
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois que o servidor estiver em execução, abra seu navegador e acesse http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você modificar qualquer arquivo de código.
 
-## Code scaffolding
+Geração de código (Scaffolding)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+O Angular CLI inclui ferramentas poderosas para geração de código. Para criar um novo componente, execute:
 
-```bash
-ng generate component component-name
-```
+ng generate component nome-do-componente
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para ver a lista completa de esquemas disponíveis (como components, directives ou pipes), execute:
 
-```bash
 ng generate --help
-```
+Build (Compilação)
 
-## Building
+Para compilar o projeto, execute:
 
-To build the project run:
-
-```bash
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Isso irá compilar seu projeto e armazenar os arquivos gerados na pasta dist/. Por padrão, a build de produção otimiza a aplicação para melhor desempenho e velocidade.
 
-## Running unit tests
+Executando testes unitários
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Para executar testes unitários utilizando o runner Vitest, use o comando:
 
-```bash
 ng test
-```
+Executando testes end-to-end
 
-## Running end-to-end tests
+Para testes end-to-end (e2e), execute:
 
-For end-to-end (e2e) testing, run:
-
-```bash
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+O Angular CLI não inclui um framework de testes e2e por padrão. Você pode escolher o que melhor atender às suas necessidades.
 
-## Additional Resources
+Recursos adicionais
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# super-dev-09-curso-angular
+Para mais informações sobre o uso do Angular CLI, incluindo referências detalhadas de comandos, visite a página de Visão geral e referência de comandos do Angular CLI.
+
+super-dev-09-curso-angular

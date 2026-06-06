@@ -1,0 +1,140 @@
+:host {
+    display: block;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f3ff;
+    min-height: calc(100vh - 70px);
+}
+
+h1 {
+    color: #2e1065;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #4c1d95;
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+/* Estilo geral dos formulários */
+#formulario-nome-completo,
+#formulario-calculadora {
+    background-color: white;
+    max-width: 560px;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(76, 29, 149, 0.15);
+    margin-bottom: 28px;
+}
+
+/* Formulário nome completo */
+#formulario-nome-completo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Formulário calculadora */
+#formulario-calculadora {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+}
+
+/* Campos principais da calculadora ocupam a largura toda */
+#formulario-calculadora label[for="numero1"],
+#formulario-calculadora label[for="numero2"],
+#formulario-calculadora input[type="number"],
+#formulario-calculadora span,
+#formulario-calculadora button {
+    grid-column: 1 / -1;
+}
+
+label,
+span {
+    color: #2e1065;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+span {
+    margin-top: 12px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px 14px;
+    border: 2px solid #ddd6fe;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #6d28d9;
+    box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.15);
+}
+
+input::placeholder {
+    color: #a78bfa;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #6d28d9;
+    cursor: pointer;
+}
+
+input[type="radio"]+label {
+    font-weight: normal;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Botões */
+button {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(135deg, #4c1d95, #2e1065);
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(76, 29, 149, 0.35);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #ede9fe;
+    color: #2e1065;
+    border-left: 4px solid #6d28d9;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+label>span,
+span>span {
+    color: #ff0000;
+    font-weight: bold;
+}

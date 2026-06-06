@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #6d28d9;
+    color: white;
+    padding: 16px 32px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar-logo a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.navbar-logo a.ativo {
+    background-color: white;
+    color: #6d28d9;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.navbar-links a.ativo {
+    background-color: white;
+    color: #6d28d9;
+}
