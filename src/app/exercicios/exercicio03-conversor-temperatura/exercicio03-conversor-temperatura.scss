@@ -1,0 +1,57 @@
+.exercicio03-conversor-temperatura {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: white;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+}
+
+.exercicio03-conversor-temperatura h2 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 25px;
+}
+
+.campo-temperatura {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-temperatura label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.campo-temperatura input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d8;
+}
+
+.opcoes-conversao {
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opcoes-conversao label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.exercicio03-conversor-temperatura button {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+}

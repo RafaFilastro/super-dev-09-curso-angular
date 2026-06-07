@@ -1,0 +1,50 @@
+<!--
+3. Criar um componente exercicio03-conversor-temperatura
+   No HTML criar:
+   - um campo para digitar uma temperatura
+   - duas opções do tipo radio para escolher:
+     a) Celsius para Fahrenheit
+     b) Fahrenheit para Celsius
+   - um botão para converter
+
+   O que deve ser feito:
+   - capturar o valor da temperatura digitada
+   - capturar a opção escolhida
+   - realizar a conversão conforme a opção marcada
+   - apresentar o resultado em um alert
+   - validar se o campo e a opção foram preenchidos
+-->
+<div class="exercicio03-conversor-temperatura">
+  <h2>Conversor de Temperatura</h2>
+
+  <div class="campo-temperatura">
+    <label for="temperatura">Digite a temperatura:</label>
+    <input type="number" id="temperatura" [(ngModel)]="temperatura" />
+  </div>
+
+  <div class="opcoes-conversao">
+    <label>
+      <input
+        type="radio"
+        name="conversao"
+        value="celsius-fahrenheit"
+        [(ngModel)]="opcaoConversao"
+      />
+      Celsius para Fahrenheit
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="conversao"
+        value="fahrenheit-celsius"
+        [(ngModel)]="opcaoConversao"
+      />
+      Fahrenheit para Celsius
+    </label>
+  </div>
+
+  <button (click)="converter()">Converter</button>
+</div>
+
+
+

@@ -1,0 +1,55 @@
+<!--
+7. Criar um componente exercicio07-plano-academia
+   No HTML criar:
+   - um campo para nome do aluno
+   - opções do tipo radio para escolher o plano
+   - um select para escolher o período do contrato
+   - um checkbox para indicar se deseja personal
+   - um botão para calcular valor final
+
+   O que deve ser feito:
+   - definir um valor base conforme o plano escolhido
+   - aplicar cálculo conforme o período do contrato
+   - adicionar valor extra caso o personal esteja marcado
+   - apresentar um alert com resumo do plano contratado
+   - validar se o nome foi preenchido
+   - validar se o plano foi escolhido
+-->
+<div class="exercicio07-plano-academia">
+  <h2>Plano Academia</h2>
+
+  <label>Nome do aluno:</label>
+  <input type="text" [(ngModel)]="nomeAluno" />
+
+  <h3>Escolha o plano:</h3>
+
+  <label>
+    <input type="radio" name="plano" value="basico" [(ngModel)]="plano" />
+    Básico - R$ 80
+  </label>
+
+  <label>
+    <input type="radio" name="plano" value="intermediario" [(ngModel)]="plano" />
+    Intermediário - R$ 120
+  </label>
+
+  <label>
+    <input type="radio" name="plano" value="premium" [(ngModel)]="plano" />
+    Premium - R$ 180
+  </label>
+
+  <label>Período do contrato:</label>
+  <select [(ngModel)]="periodo">
+    <option value="">Selecione</option>
+    <option value="1">1 mês</option>
+    <option value="6">6 meses</option>
+    <option value="12">12 meses</option>
+  </select>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="personal" />
+    Deseja personal? + R$ 100 por mês
+  </label>
+
+  <button (click)="calcularPlano()">Calcular valor final</button>
+</div>

@@ -1,0 +1,107 @@
+.exercicio08-simulador-frete {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio08-simulador-frete h2 {
+  text-align: center;
+  color: #6d28d9;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.exercicio08-simulador-frete label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio08-simulador-frete input[type="text"],
+.exercicio08-simulador-frete input[type="number"],
+.exercicio08-simulador-frete select {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio08-simulador-frete input[type="text"]:focus,
+.exercicio08-simulador-frete input[type="number"]:focus,
+.exercicio08-simulador-frete select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio08-simulador-frete input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.exercicio08-simulador-frete label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+  padding: 12px;
+
+  background-color: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.exercicio08-simulador-frete button {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.exercicio08-simulador-frete button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.exercicio08-simulador-frete button:active {
+  transform: translateY(0);
+}
+
+.exercicio08-simulador-frete p {
+  margin-top: 20px;
+  padding: 16px;
+
+  background-color: #f9fafb;
+  border-left: 4px solid #6d28d9;
+  border-radius: 10px;
+
+  color: #3f3f46;
+  font-weight: 500;
+  line-height: 1.6;
+}

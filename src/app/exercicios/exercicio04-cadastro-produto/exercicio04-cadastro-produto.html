@@ -1,0 +1,31 @@
+<!--
+4. Criar um componente exercicio04-cadastro-produto
+   No HTML criar:
+   - um campo para nome do produto
+   - um campo para preço
+   - um campo para quantidade
+   - um botão para calcular total
+   - um parágrafo para apresentar o resultado
+
+   O que deve ser feito:
+   - relacionar os campos com variáveis usando ngModel
+   - calcular o valor total do produto multiplicando preço pela quantidade
+   - apresentar no HTML o nome do produto e o valor total
+   - validar se todos os campos foram preenchidos corretamente
+-->
+<div class="container">
+  <h2>Cadastro de Produto</h2>
+  <div class="form-group">
+    <label for="nomeProduto">Nome do Produto:</label>
+    <input type="text" id="nomeProduto" class="form-control" [(ngModel)]="nomeProduto">
+  </div>
+  <div class="form-group">
+    <label for="precoProduto">Preço:</label>
+    <input type="number" id="precoProduto" class="form-control" [(ngModel)]="precoProduto">
+  </div>
+  <div class="form-group">
+    <label for="quantidadeProduto">Quantidade:</label>
+    <input type="number" id="quantidadeProduto" class="form-control" [(ngModel)]="quantidadeProduto">
+  </div>
+  <button class="btn btn-primary" (click)="calcularTotal()">Calcular Total</button>
+</div>

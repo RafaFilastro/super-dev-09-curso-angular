@@ -1,0 +1,38 @@
+<!--
+5. Criar um componente exercicio05-imc
+   No HTML criar:
+   - um campo para nome
+   - um campo para peso
+   - um campo para altura
+   - um botão para calcular IMC
+
+   O que deve ser feito:
+   - capturar os valores informados
+   - calcular o IMC
+   - apresentar o resultado com o nome da pessoa
+   - informar também a classificação do IMC
+   - validar se peso e altura foram preenchidos
+   - impedir cálculo caso a altura seja igual a zero
+-->
+<div class="exercicio05-imc">
+  <h2>Calculadora de IMC</h2>
+
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input id="nome" type="text" [(ngModel)]="nome" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="peso">Peso (kg):</label>
+    <input id="peso" type="number" [(ngModel)]="peso" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="altura">Altura (m):</label>
+    <input id="altura" type="number" [(ngModel)]="altura" class="form-control" />
+  </div>
+
+  <button (click)="calcularIMC()" class="btn btn-primary">
+    Calcular IMC
+  </button>
+</div>

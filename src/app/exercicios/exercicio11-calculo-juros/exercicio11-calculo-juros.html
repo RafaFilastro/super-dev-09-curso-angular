@@ -1,0 +1,24 @@
+<div class="exercicio-calculo-juros">
+    <h1>Exercício 11 - Cálculo de Juros</h1>
+
+    <div class="input-group">
+        <label for="capital">Capital Inicial (R$):</label>
+        <input type="number" id="capital" [(ngModel)]="capital" placeholder="Digite o capital inicial">
+    </div>
+
+    <div class="input-group">
+        <label for="taxa">Taxa de Juros (% ao mês):</label>
+        <input type="number" id="taxa" [(ngModel)]="taxa" placeholder="Digite a taxa de juros">
+    </div>
+
+    <div class="input-group">
+        <label for="periodo">Período (meses):</label>
+        <input type="number" id="periodo" [(ngModel)]="periodo" placeholder="Digite o período em meses">
+    </div>
+
+    <button (click)="calcularJuros()">Calcular Juros</button>
+
+    <div *ngIf="resultado !== null" class="resultado">
+        <p>Valor Final: R$ {{ resultado | number:'1.2-2' }}</p>
+    </div>
+</div>

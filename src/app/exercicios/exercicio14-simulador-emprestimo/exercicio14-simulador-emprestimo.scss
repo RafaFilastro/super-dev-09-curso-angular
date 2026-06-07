@@ -1,0 +1,112 @@
+.exercicio14-simulador-emprestimo {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+}
+
+.exercicio14-simulador-emprestimo h1 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.exercicio14-simulador-emprestimo form {
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio14-simulador-emprestimo .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.exercicio14-simulador-emprestimo .form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio14-simulador-emprestimo .form-group input {
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio14-simulador-emprestimo .form-group input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio14-simulador-emprestimo button {
+  width: 100%;
+  padding: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #6d28d9,
+    #7c3aed
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio14-simulador-emprestimo button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.exercicio14-simulador-emprestimo button:active {
+  transform: translateY(0);
+}
+
+.exercicio14-simulador-emprestimo div:last-child {
+  margin-top: 25px;
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f8f5ff,
+    #ffffff
+  );
+
+  border: 1px solid #ddd6fe;
+  border-left: 5px solid #6d28d9;
+  border-radius: 12px;
+}
+
+.exercicio14-simulador-emprestimo h2 {
+  color: #6d28d9;
+  margin-bottom: 12px;
+}
+
+.exercicio14-simulador-emprestimo p {
+  margin: 8px 0;
+  color: #3f3f46;
+  font-weight: 500;
+}

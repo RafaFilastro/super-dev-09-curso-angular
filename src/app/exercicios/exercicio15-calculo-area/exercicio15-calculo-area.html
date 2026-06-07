@@ -1,0 +1,41 @@
+<div class="exercicio15-calculo-area">
+    <h1>Cálculo de Área</h1>
+    <form (ngSubmit)="calcularArea()">
+        <div class="form-group">
+            <label for="forma">Selecione a Forma Geométrica:</label>
+            <select id="forma" [(ngModel)]="forma" name="forma" class="form-control" required>
+                <option value="" disabled selected>Escolha uma forma</option>
+                <option value="quadrado">Quadrado</option>
+                <option value="retangulo">Retângulo</option>
+                <option value="triangulo">Triângulo</option>
+                <option value="circulo">Círculo</option>
+            </select>
+        </div>
+
+        <div *ngIf="forma === 'quadrado'" class="form-group">
+            <label for="lado">Lado:</label>
+            <input type="number" id="lado" [(ngModel)]="lado" name="lado" class="form-control" required>
+        </div>
+        <div *ngIf="forma === 'retangulo'" class="form-group">
+            <label for="base">Base:</label>
+            <input type="number" id="base" [(ngModel)]="base" name="base" class="form-control" required>
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" [(ngModel)]="altura" name="altura" class="form-control" required>
+        </div>
+        <div *ngIf="forma === 'triangulo'" class="form-group">
+            <label for="baseTriangulo">Base:</label>
+            <input type="number" id="baseTriangulo" [(ngModel)]="baseTriangulo" name="baseTriangulo" class="form-control" required>
+            <label for="alturaTriangulo">Altura:</label>
+            <input type="number" id="alturaTriangulo" [(ngModel)]="alturaTriangulo" name="alturaTriangulo" class="form-control" required>
+        </div>
+        <div *ngIf="forma === 'circulo'" class="form-group">
+            <label for="raio">Raio:</label>
+            <input type="number" id="raio" [(ngModel)]="raio" name="raio" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+    <div *ngIf="area !== null">
+        <h2>Área Calculada:</h2>
+        <p>{{ area }}</p>
+    </div>
+</div>

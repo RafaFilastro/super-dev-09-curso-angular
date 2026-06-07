@@ -1,0 +1,133 @@
+.exercicio12-sistema-reserva {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+}
+
+.exercicio12-sistema-reserva h1 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 15px;
+}
+
+.exercicio12-sistema-reserva h2 {
+  color: #6d28d9;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.exercicio12-sistema-reserva > p {
+  text-align: center;
+  color: #52525b;
+  margin-bottom: 25px;
+}
+
+.exercicio12-sistema-reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exercicio12-sistema-reserva label {
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio12-sistema-reserva input {
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio12-sistema-reserva input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio12-sistema-reserva button {
+  margin-top: 10px;
+  padding: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #6d28d9,
+    #7c3aed
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio12-sistema-reserva button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.reservations {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reservation {
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f8f5ff,
+    #ffffff
+  );
+
+  border: 1px solid #ddd6fe;
+  border-left: 5px solid #6d28d9;
+  border-radius: 12px;
+}
+
+.reservation p {
+  margin: 8px 0;
+  color: #3f3f46;
+}
+
+.reservation button {
+  margin-top: 12px;
+  background: #dc2626;
+}
+
+.reservation button:hover {
+  background: #b91c1c;
+}
+
+.sem-reserva {
+  margin-top: 20px;
+  padding: 16px;
+
+  text-align: center;
+
+  background-color: #f9fafb;
+  border-radius: 10px;
+
+  color: #71717a;
+}

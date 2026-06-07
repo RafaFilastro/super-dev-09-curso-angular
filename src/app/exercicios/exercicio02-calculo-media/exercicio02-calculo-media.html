@@ -1,0 +1,37 @@
+<!--
+2. Criar um componente exercicio02-calculo-media
+   No HTML criar:
+   - um campo para nota 1
+   - um campo para nota 2
+   - um campo para nota 3
+   - um botão para calcular média
+
+   O que deve ser feito:
+   - relacionar os campos com signals
+   - ao clicar no botão, calcular a média das 3 notas
+   - apresentar a média em um alert
+   - informar também se o aluno foi aprovado ou reprovado
+   - validar se todas as notas foram preenchidas
+-->
+
+<div class="exercicio02-calculo-media">
+  <h2>Cálculo de Média</h2>
+
+  <div class="campo-nota">
+    <label for="nota1">Nota 1:</label>
+    <input id="nota1" type="number" [(ngModel)]="nota1" />
+  </div>
+
+  <div class="campo-nota">
+    <label for="nota2">Nota 2:</label>
+    <input id="nota2" type="number" [(ngModel)]="nota2" />
+  </div>
+
+  <div class="campo-nota">
+    <label for="nota3">Nota 3:</label>
+    <input id="nota3" type="number" [(ngModel)]="nota3" />
+  </div>
+
+  <button (click)="calcularMedia()">Calcular Média</button>
+</div>
+

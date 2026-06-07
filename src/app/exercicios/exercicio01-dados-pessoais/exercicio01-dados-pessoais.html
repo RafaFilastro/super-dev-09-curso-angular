@@ -1,0 +1,30 @@
+<!--
+1. Criar um componente exercicio01-dados-pessoais
+   No HTML criar:
+   - um campo para nome
+   - um campo para sobrenome
+   - um campo para idade
+   - um botão para apresentar os dados
+
+   O que deve ser feito:
+   - utilizar ngModel para relacionar os campos com variáveis do componente
+   - ao clicar no botão, apresentar um alert com nome completo e idade
+   - validar se nome, sobrenome e idade foram preenchidos
+   - caso algum campo não esteja preenchido, mostrar mensagem de alerta
+   -->
+<div class="exercicio01-dados-pessoais">
+    <h2>Dados Pessoais</h2>
+
+    <div class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" [(ngModel)]="nome" />
+
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" [(ngModel)]="sobrenome" />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" [(ngModel)]="idade" />
+
+        <button (click)="apresentarDados()">Apresentar Dados</button>
+    </div>
+</div>

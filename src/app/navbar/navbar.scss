@@ -1,55 +1,67 @@
 .navbar {
-    background-color: #6d28d9;
-    color: white;
-    padding: 16px 32px;
-    box-sizing: border-box;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+  padding: 16px 32px;
+  box-sizing: border-box;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 .navbar-logo a:hover {
-    background-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: scale(1.04);
 }
 
 .navbar-logo a.ativo {
-    background-color: white;
-    color: #6d28d9;
+  background-color: white;
+  color: #6d28d9;
 }
 
 .navbar-links {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .navbar-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 .navbar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.18);
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
 }
 
 .navbar-links a.ativo {
-    background-color: white;
-    color: #6d28d9;
+  background-color: white;
+  color: #6d28d9;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }

@@ -1,0 +1,86 @@
+.exercicio09-cadastro-usuario {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio09-cadastro-usuario h2 {
+  text-align: center;
+  color: #6d28d9;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.exercicio09-cadastro-usuario label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio09-cadastro-usuario input {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio09-cadastro-usuario input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio09-cadastro-usuario button {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.exercicio09-cadastro-usuario button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.exercicio09-cadastro-usuario button:active {
+  transform: translateY(0);
+}
+
+.exercicio09-cadastro-usuario div {
+  margin-top: 20px;
+  padding: 16px;
+
+  background-color: #f9fafb;
+  border-left: 4px solid #6d28d9;
+  border-radius: 10px;
+}
+
+.exercicio09-cadastro-usuario p {
+  margin: 0;
+  color: #3f3f46;
+  font-weight: 500;
+}

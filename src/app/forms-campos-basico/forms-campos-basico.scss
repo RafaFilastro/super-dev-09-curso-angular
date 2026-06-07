@@ -1,140 +1,86 @@
-:host {
-    display: block;
-    padding: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f3ff;
-    min-height: calc(100vh - 70px);
-}
-
 h1 {
-    color: #2e1065;
-    font-size: 32px;
-    margin-bottom: 8px;
+  text-align: center;
+  color: #6d28d9;
+  margin: 25px 0;
 }
 
 h2 {
-    color: #4c1d95;
-    font-size: 22px;
-    margin-bottom: 24px;
-    font-weight: 600;
+  max-width: 500px;
+  margin: 30px auto 15px auto;
+  color: #6d28d9;
 }
 
-/* Estilo geral dos formulários */
 #formulario-nome-completo,
 #formulario-calculadora {
-    background-color: white;
-    max-width: 560px;
-    padding: 24px;
-    border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(76, 29, 149, 0.15);
-    margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  padding: 25px;
+
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Formulário nome completo */
-#formulario-nome-completo {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+#formulario-nome-completo label,
+#formulario-calculadora label {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-/* Formulário calculadora */
-#formulario-calculadora {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-    gap: 12px;
+#formulario-nome-completo input[type="text"],
+#formulario-calculadora input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-/* Campos principais da calculadora ocupam a largura toda */
-#formulario-calculadora label[for="numero1"],
-#formulario-calculadora label[for="numero2"],
-#formulario-calculadora input[type="number"],
-#formulario-calculadora span,
+#formulario-nome-completo button,
 #formulario-calculadora button {
-    grid-column: 1 / -1;
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-label,
-span {
-    color: #2e1065;
-    font-weight: bold;
-    font-size: 14px;
+#formulario-nome-completo button:hover,
+#formulario-calculadora button:hover {
+  background: #5b21b6;
 }
 
-span {
-    margin-top: 12px;
+#formulario-nome-completo p {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: white;
+  border-left: 4px solid #6d28d9;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-input[type="text"],
-input[type="number"] {
-    padding: 12px 14px;
-    border: 2px solid #ddd6fe;
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+#formulario-calculadora > span {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #111827;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
-    border-color: #6d28d9;
-    box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.15);
+#formulario-calculadora > span span {
+  color: #dc2626;
 }
 
-input::placeholder {
-    color: #a78bfa;
+#formulario-calculadora input[type="radio"] {
+  width: auto;
+  margin: 8px 8px 0 0;
 }
 
-/* Radio buttons */
-input[type="radio"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #6d28d9;
-    cursor: pointer;
-}
-
-input[type="radio"]+label {
-    font-weight: normal;
-    cursor: pointer;
-    align-self: center;
-}
-
-/* Botões */
-button {
-    margin-top: 12px;
-    padding: 12px 16px;
-    border: none;
-    border-radius: 8px;
-
-    background: linear-gradient(135deg, #4c1d95, #2e1065);
-    color: white;
-
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(76, 29, 149, 0.35);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-p {
-    margin-top: 16px;
-    padding: 12px;
-    background-color: #ede9fe;
-    color: #2e1065;
-    border-left: 4px solid #6d28d9;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-label>span,
-span>span {
-    color: #ff0000;
-    font-weight: bold;
+#formulario-calculadora label[for^="operacao"] {
+  display: inline;
+  font-weight: normal;
+  margin: 0 0 8px 0;
 }

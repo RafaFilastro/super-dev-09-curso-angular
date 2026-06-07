@@ -1,0 +1,47 @@
+.exercicio05-imc {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: white;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+}
+
+.exercicio05-imc h2 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input {
+  margin-bottom: 18px;
+  padding: 12px;
+
+  border-radius: 10px;
+  border: 1px solid #d4d4d8;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+}

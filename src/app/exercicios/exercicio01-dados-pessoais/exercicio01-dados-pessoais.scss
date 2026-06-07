@@ -1,0 +1,73 @@
+.exercicio01-dados-pessoais {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: #ffffff;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+  border: 1px solid #ede9fe;
+}
+
+.exercicio01-dados-pessoais h2 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.formulario input {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.formulario input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.formulario button {
+  margin-top: 8px;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.formulario button:active {
+  transform: translateY(0);
+}

@@ -1,0 +1,38 @@
+<!--
+9. Criar um componente exercicio09-cadastro-usuario
+   No HTML criar:
+   - um campo para nome
+   - um campo para email
+   - um campo para senha
+   - um campo para confirmar senha
+   - um botão para cadastrar
+   - uma área para mostrar o resultado do cadastro
+
+   O que deve ser feito:
+   - capturar todos os valores com ngModel
+   - validar se todos os campos foram preenchidos
+   - validar se a senha e a confirmação são iguais
+   - se estiver tudo correto, apresentar uma mensagem de cadastro realizado
+   - se houver erro, apresentar a mensagem correspondente
+-->
+<div class="exercicio09-cadastro-usuario">
+  <h2>Cadastro de Usuário</h2>
+
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="nome" />
+
+  <label>Email:</label>
+  <input type="email" [(ngModel)]="email" />
+
+  <label>Senha:</label>
+  <input type="password" [(ngModel)]="senha" />
+
+  <label>Confirmar senha:</label>
+  <input type="password" [(ngModel)]="confirmarSenha" />
+
+  <button (click)="cadastrar()">Cadastrar</button>
+
+  <div *ngIf="mensagem">
+    <p>{{ mensagem }}</p>
+  </div>
+</div>

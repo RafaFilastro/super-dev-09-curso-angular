@@ -1,0 +1,115 @@
+.exercicio15-calculo-area {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+}
+
+.exercicio15-calculo-area h1 {
+  text-align: center;
+  color: #6d28d9;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.exercicio15-calculo-area form {
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio15-calculo-area .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.exercicio15-calculo-area .form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio15-calculo-area .form-group input,
+.exercicio15-calculo-area .form-group select {
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio15-calculo-area .form-group input:focus,
+.exercicio15-calculo-area .form-group select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio15-calculo-area button {
+  width: 100%;
+  padding: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #6d28d9,
+    #7c3aed
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio15-calculo-area button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.exercicio15-calculo-area button:active {
+  transform: translateY(0);
+}
+
+.exercicio15-calculo-area > div:last-child {
+  margin-top: 25px;
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #f8f5ff,
+    #ffffff
+  );
+
+  border: 1px solid #ddd6fe;
+  border-left: 5px solid #6d28d9;
+  border-radius: 12px;
+}
+
+.exercicio15-calculo-area h2 {
+  color: #6d28d9;
+  margin-bottom: 12px;
+}
+
+.exercicio15-calculo-area p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f3f46;
+}

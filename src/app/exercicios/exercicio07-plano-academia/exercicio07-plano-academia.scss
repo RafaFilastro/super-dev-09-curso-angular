@@ -1,0 +1,106 @@
+.exercicio07-plano-academia {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background-color: #ffffff;
+  border: 1px solid #ede9fe;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(109, 40, 217, 0.15);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.exercicio07-plano-academia h2 {
+  text-align: center;
+  color: #6d28d9;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+.exercicio07-plano-academia h3 {
+  color: #6d28d9;
+  margin: 20px 0 12px;
+}
+
+.exercicio07-plano-academia label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.exercicio07-plano-academia input[type="text"],
+.exercicio07-plano-academia select {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+
+  border: 1px solid #d4d4d8;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.exercicio07-plano-academia input[type="text"]:focus,
+.exercicio07-plano-academia select:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.exercicio07-plano-academia input[type="radio"],
+.exercicio07-plano-academia input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.exercicio07-plano-academia label:has(input[type="radio"]),
+.exercicio07-plano-academia label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+  padding: 12px;
+
+  background-color: #f5f3ff;
+  border: 1px solid #ddd6fe;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exercicio07-plano-academia label:has(input[type="radio"]):hover,
+.exercicio07-plano-academia label:has(input[type="checkbox"]):hover {
+  background-color: #ede9fe;
+}
+
+.exercicio07-plano-academia button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.exercicio07-plano-academia button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(109, 40, 217, 0.28);
+}
+
+.exercicio07-plano-academia button:active {
+  transform: translateY(0);
+}

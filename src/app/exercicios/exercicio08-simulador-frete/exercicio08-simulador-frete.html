@@ -1,0 +1,47 @@
+<!--
+8. Criar um componente exercicio08-simulador-frete
+   No HTML criar:
+   - um campo para nome do produto
+   - um campo para valor do produto
+   - um select para escolher a região de entrega
+   - um checkbox para entrega expressa
+   - um botão para calcular total
+   - um parágrafo para mostrar o resultado
+
+   O que deve ser feito:
+   - calcular o valor do frete conforme a região escolhida
+   - adicionar taxa extra caso a entrega expressa esteja marcada
+   - somar o valor do produto com o frete
+   - apresentar no HTML um resumo da compra
+   - validar se os campos obrigatórios foram preenchidos
+-->
+<div class="exercicio08-simulador-frete">
+  <h2>Simulador de Frete</h2>
+
+  <label>Nome do produto:</label>
+  <input type="text" [(ngModel)]="nomeProduto" />
+
+  <label>Valor do produto:</label>
+  <input type="number" [(ngModel)]="valorProduto" />
+
+  <label>Região de entrega:</label>
+  <select [(ngModel)]="regiao">
+    <option value="">Selecione</option>
+    <option value="sul">Sul - R$ 20</option>
+    <option value="sudeste">Sudeste - R$ 25</option>
+    <option value="centro-oeste">Centro-Oeste - R$ 35</option>
+    <option value="nordeste">Nordeste - R$ 45</option>
+    <option value="norte">Norte - R$ 55</option>
+  </select>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="entregaExpressa" />
+    Entrega expressa + R$ 15
+  </label>
+
+  <button (click)="calcularTotal()">Calcular total</button>
+
+  <p *ngIf="resultado">
+    {{ resultado }}
+  </p>
+</div>

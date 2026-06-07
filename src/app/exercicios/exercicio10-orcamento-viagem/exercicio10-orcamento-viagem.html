@@ -1,0 +1,73 @@
+<!--
+10. Criar um componente exercicio10-orcamento-viagem
+    No HTML criar:
+    - um campo para nome do viajante
+    - um select para escolher o destino
+    - um campo para quantidade de dias
+    - opções do tipo radio para escolher a hospedagem
+    - um checkbox para café da manhã
+    - um checkbox para passeio turístico
+    - um botão para calcular orçamento
+    - uma área grande no HTML para apresentar o resumo final
+
+    O que deve ser feito:
+    - definir um valor base conforme o destino
+    - definir um valor por diária conforme a hospedagem
+    - adicionar valores extras dos serviços marcados
+    - calcular o orçamento total da viagem
+    - apresentar um resumo completo com várias linhas
+    - validar se todos os campos obrigatórios foram preenchidos
+    - validar se o usuário escolheu uma hospedagem
+-->
+<div class="exercicio10-orcamento-viagem">
+  <h2>Orçamento de Viagem</h2>
+
+  <label>Nome do viajante:</label>
+  <input type="text" [(ngModel)]="nomeViajante" />
+
+  <label>Destino:</label>
+  <select [(ngModel)]="destino">
+    <option value="">Selecione</option>
+    <option value="florianopolis">Florianópolis - R$ 300</option>
+    <option value="gramado">Gramado - R$ 500</option>
+    <option value="rio-de-janeiro">Rio de Janeiro - R$ 700</option>
+    <option value="sao-paulo">São Paulo - R$ 600</option>
+  </select>
+
+  <label>Quantidade de dias:</label>
+  <input type="number" [(ngModel)]="quantidadeDias" />
+
+  <h3>Hospedagem:</h3>
+
+  <label>
+    <input type="radio" name="hospedagem" value="simples" [(ngModel)]="hospedagem" />
+    Simples - R$ 120 por dia
+  </label>
+
+  <label>
+    <input type="radio" name="hospedagem" value="conforto" [(ngModel)]="hospedagem" />
+    Conforto - R$ 220 por dia
+  </label>
+
+  <label>
+    <input type="radio" name="hospedagem" value="luxo" [(ngModel)]="hospedagem" />
+    Luxo - R$ 350 por dia
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="cafeManha" />
+    Café da manhã + R$ 30 por dia
+  </label>
+
+  <label>
+    <input type="checkbox" [(ngModel)]="passeioTuristico" />
+    Passeio turístico + R$ 150
+  </label>
+
+  <button (click)="calcularOrcamento()">Calcular orçamento</button>
+
+  <div *ngIf="resumoFinal">
+    <h3>Resumo final</h3>
+    <pre>{{ resumoFinal }}</pre>
+  </div>
+</div>

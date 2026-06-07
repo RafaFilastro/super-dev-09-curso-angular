@@ -1,0 +1,47 @@
+<!--
+6. Criar um componente exercicio06-pedido-pizzaria
+   No HTML criar:
+   - um campo para nome do cliente
+   - um select para escolher o tamanho da pizza
+   - um campo para quantidade
+   - um checkbox para borda recheada
+   - um botão para calcular pedido
+   - uma área no HTML para apresentar o resumo
+
+   O que deve ser feito:
+   - utilizar ngModel em todos os campos
+   - definir um valor para cada tamanho de pizza
+   - adicionar valor extra caso a borda recheada esteja marcada
+   - multiplicar pelo total de pizzas
+   - apresentar um resumo do pedido com nome, tamanho, quantidade e total
+   - validar se os campos obrigatórios foram preenchidos
+-->
+<div class="exercicio06-pedido-pizzaria">
+  <h2>Pedido Pizzaria</h2>
+
+  <label>Nome do cliente:</label>
+  <input type="text" [(ngModel)]="nomeCliente" />
+
+  <label>Tamanho da pizza:</label>
+  <select [(ngModel)]="tamanhoPizza">
+    <option value="">Selecione</option>
+    <option value="pequena">Pequena - R$ 30</option>
+    <option value="media">Média - R$ 45</option>
+    <option value="grande">Grande - R$ 60</option>
+  </select>
+
+  <label>Quantidade:</label>
+  <input type="number" [(ngModel)]="quantidade" />
+
+  <label>
+    <input type="checkbox" [(ngModel)]="bordaRecheada" />
+    Borda recheada + R$ 8 por pizza
+  </label>
+
+  <button (click)="calcularPedido()">Calcular pedido</button>
+
+  <div *ngIf="resumoPedido">
+    <h3>Resumo do pedido</h3>
+    <p>{{ resumoPedido }}</p>
+  </div>
+</div>
